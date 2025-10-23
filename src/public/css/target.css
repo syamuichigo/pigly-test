@@ -1,0 +1,103 @@
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* 目標体重設定フォームのコンテナ */
+.target-weight-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* フォームのタイトル */
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #424242;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* 入力フィールドのグループ */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+/* 体重入力欄 */
+.weight-input {
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+    text-align: right;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    -moz-appearance: textfield;
+    /* Firefoxで矢印を非表示にする */
+    appearance: textfield;
+}
+
+.weight-input::-webkit-inner-spin-button,
+.weight-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* 単位（kg） */
+.unit {
+    margin-left: 10px;
+    color: #757575;
+}
+
+/* ボタンのグループ */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 戻るボタン */
+.back-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: #757575;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #f5f5f5;
+}
+
+/* 更新ボタン */
+.update-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    background: linear-gradient(to right, #e0aaff, #c2e0ff);
+    /* 画像に合わせたグラデーション */
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.update-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

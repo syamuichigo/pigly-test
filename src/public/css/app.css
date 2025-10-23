@@ -1,0 +1,53 @@
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    padding: 10px 20px;
+}
+
+/* コンテナ部分 */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ロゴ */
+.header__logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+    /* ロゴの色を緑と仮定 */
+    text-decoration: none;
+}
+
+/* ナビゲーション */
+.header__nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header__nav-item a,
+.header__nav-item button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #757575;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.header__nav-item img {
+    width: 16px;
+    /* アイコンのサイズを仮定 */
+    height: 16px;
+    margin-right: 5px;
+    display: none;
+    /* 画像が空なので非表示 */
+}

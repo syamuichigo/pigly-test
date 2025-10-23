@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #f5d0fe 0%, #a2a8ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #d881e1;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.step {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-group span {
+    margin-left: 10px;
+    color: #888;
+    font-size: 1rem;
+}
+
+.button-group {
+    margin-top: 40px;
+}
+
+.btn {
+    background: linear-gradient(45deg, #d881e1 0%, #a2a8ff 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
