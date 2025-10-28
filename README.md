@@ -41,8 +41,8 @@ php artisan db:seed
 ![alt](Capture001.png)
 
 ## テストユーザー情報
-- email kevein@example.com
-- password password
+- email : kevein@example.com
+- password : password
 
 ## URL
 - 開発環境：http://localhost/admin
