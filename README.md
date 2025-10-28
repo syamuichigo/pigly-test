@@ -39,6 +39,11 @@ php artisan db:seed
 - MySQL8.0.26
 ## ER図
 ![alt](Capture001.png)
+
+## テストユーザー情報
+- email kevein@example.com
+- password password
+
 ## URL
 - 開発環境：http://localhost/admin
 - phpMyAdmin:：http://localhost:8080/
