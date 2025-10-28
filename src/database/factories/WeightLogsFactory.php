@@ -15,6 +15,7 @@ class WeightLogsFactory extends Factory
     {
         return [
             'user_id' => 1,
+            'date' => $this->faker->date(),
             'weight' => $this->faker->randomFloat(1, 30, 150),
             'calories' => $this->faker->numberBetween(100, 1000),
             'exercise_time' => $this->faker->time('H:i:s'),

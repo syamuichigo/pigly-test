@@ -38,6 +38,7 @@ php artisan db:seed
 - Laravel8.83.27
 - MySQL8.0.26
 ## ER図
+![alt](Capture001.png)
 ## URL
 - 開発環境：http://localhost/admin
 - phpMyAdmin:：http://localhost:8080/

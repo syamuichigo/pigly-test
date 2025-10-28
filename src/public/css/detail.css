@@ -1,0 +1,102 @@
+body {
+    background-color: #F9F9F9;
+}
+.weight-log-form {
+    margin: 0 auto;
+    width: 800px;
+    height: 820px;
+    background-color: #FFFFFF;
+}
+.form-title {
+    padding: 20px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+}
+.input-content {
+    align-items: center;
+}
+.form-group {
+    align-items: center;
+    margin: 20px auto;
+    width: 700px;
+}
+.input-lavel {
+    color: #333;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 700px;
+}
+.weight-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+.error{
+    color: red;
+    font-size: 0.9rem;
+}
+.unit{
+    font-size: 0.9rem;
+    color: #555;
+    width: 25px;
+    margin: 5px;
+}
+.button-group {
+    display: flex;
+    margin-right: 100px;
+    padding: 20px 50px;
+    width: 100%;
+}
+.back-button{
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    margin: auto 50px;
+}
+.back-button:hover {
+    opacity: 0.8;
+}
+.update-button {
+    background: linear-gradient(45deg, #d881e1 0%, #a2a8ff 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    margin: auto 50px;
+}
+.update-button:hover {
+    opacity: 0.8;
+}
+.delete-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    position: relative;
+    bottom: 60px;
+    right: -680px;
+}
+.delete-button:hover {
+    opacity: 0.8;
+    
+}
+
+.delete-button_submit {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

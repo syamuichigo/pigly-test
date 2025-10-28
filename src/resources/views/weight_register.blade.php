@@ -15,31 +15,35 @@
         <p class="subtitle">新規会員登録</p>
         <p class="step">STEP2 体重データの入力</p>
 
-        <form>
+        <form action="/create_target" method="post">
+            @csrf
+            <input type="hidden" name="user_id" value="{{ $user_id }}">
             <div class="form-group">
-                <label for="current_weight">現在の体重</label>
+                <label for="weight">現在の体重</label>
                 <div class="input-group">
-                    <input type="number" id="current_weight" name="current_weight" placeholder="現在の体重を入力">
+                    <input type="number" id="weight" name="weight" placeholder="現在の体重を入力" value="{{old('weight')}}">
                     <span>kg</span>
                 </div>
                 <div class="error">
-                    <!-- エラーメッセージ表示エリア -->
+                    @error('target_weight')
+                    {{ $message }}
+                    @enderror
                 </div>
             </div>
-
             <div class="form-group">
                 <label for="target_weight">目標の体重</label>
                 <div class="input-group">
-                    <input type="number" id="target_weight" name="target_weight" placeholder="目標の体重を入力" required>
+                    <input type="number" id="target_weight" name="target_weight" placeholder="目標の体重を入力" value="{{old('target_weight')}}" required>
                     <span>kg</span>
                 </div>
                 <div class="error">
-                    <!-- エラーメッセージ表示エリア -->
+                    @error('target_weight')
+                    {{ $message }}
+                    @enderror
                 </div>
             </div>
-
             <div class="button-group">
-                <button type="submit" class="btn">アカウント作成</button>
+                <button type="submit" class="btn">登録</button>
             </div>
         </form>
     </div>

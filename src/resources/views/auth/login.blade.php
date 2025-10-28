@@ -13,9 +13,8 @@
     <div class="container">
         <h1 class="logo">PiGLy</h1>
         <p class="subtitle">ログイン</p>
-
-        <form>
-
+        <form action="login" method="post">
+            @csrf
             <div class="form-group">
                 <label for="email">メールアドレス</label>
                 <div class="input-group">

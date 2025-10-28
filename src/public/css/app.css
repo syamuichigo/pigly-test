@@ -5,23 +5,19 @@
     padding: 10px 20px;
 }
 
-/* コンテナ部分 */
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* ロゴ */
 .header__logo a {
     font-size: 24px;
     font-weight: bold;
-    color: #4CAF50;
-    /* ロゴの色を緑と仮定 */
+    color: #EC87EF;
     text-decoration: none;
 }
 
-/* ナビゲーション */
 .header__nav-list {
     list-style: none;
     margin: 0;
@@ -30,24 +26,40 @@
     gap: 20px;
 }
 
-.header__nav-item a,
-.header__nav-item button {
+.header__nav-item a{
     display: flex;
     align-items: center;
+    text-align: right;
     text-decoration: none;
-    background: none;
-    border: none;
-    color: #757575;
-    font-size: 14px;
+    background-color: #F7F7F7;
+    border: solid 1px #CDCDCD;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    padding: 0;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    color: black;
+}
+
+.header__nav-item button{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration: none;
+    background-color: #F7F7F7;
+    border: solid 1px #CDCDCD;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    width: 130px;
+    height: 40px;
+    color: black;
 }
 
 .header__nav-item img {
-    width: 16px;
-    /* アイコンのサイズを仮定 */
-    height: 16px;
-    margin-right: 5px;
-    display: none;
-    /* 画像が空なので非表示 */
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
 }
