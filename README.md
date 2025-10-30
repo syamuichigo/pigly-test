@@ -38,7 +38,7 @@ php artisan db:seed
 - Laravel8.83.27
 - MySQL8.0.26
 ## ER図
-![alt](ER.png)
+![alt](er.png)
 
 ## テストユーザー情報
 - email : kevein@example.com
