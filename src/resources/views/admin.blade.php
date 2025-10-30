@@ -63,7 +63,7 @@
                                     <span class="modal-row_title-unit">必須</span>
                                 </div>
                                 <div class="modal-row_content">
-                                    <input class="modal-row_input" type="date" name="date" id="date" value="{{old('date')}}">
+                                    <input class="modal-row_input" type="date" name="date" id="date" value="{{$today}}">
                                 </div>
                                 <div class="error">
                                     @error('date')

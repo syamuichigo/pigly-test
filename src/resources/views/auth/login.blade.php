@@ -21,7 +21,9 @@
                     <input type="text" id="email" name="email" placeholder="メールアドレスを入力">
                 </div>
                 <div class="error">
-                    <!-- エラーメッセージ表示エリア -->
+                    @error('email')
+                    <div class="error">{{ $message }}</div>
+                    @enderror
                 </div>
             </div>
 
@@ -31,7 +33,9 @@
                     <input type="password" id="password" name="password" placeholder="パスワードを入力">
                 </div>
                 <div class="error">
-                    <!-- エラーメッセージ表示エリア -->
+                    @error('password')
+                    <div class="error">{{ $message }}</div>
+                    @enderror
                 </div>
             </div>
 

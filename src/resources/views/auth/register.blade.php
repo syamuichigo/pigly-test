@@ -48,7 +48,7 @@
             </div>
 
             <div class="button-group">
-                <button type="submit" class="register-button">アカウント作成</button>
+                <button type="submit" class="register-button">次に進む</button>
             </div>
         </form>
         <div class="login">

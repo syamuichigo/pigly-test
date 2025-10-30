@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="{{ asset('css/target.css') }}">
 @endsection
 
+
 @section('content')
 <div class="target-weight-form">
     <h2 class="form-title">目標体重設定</h2>

@@ -15,10 +15,11 @@ class WeightController extends Controller
     public function admin()
     {
         $userId = Auth::id();
+        $today = date('Y-m-d');
         $weight_logs = WeightLogs::where('user_id', $userId)->paginate(8);
         $target_weight = WeightTarget::where('user_id', $userId)->get('target_weight');
         $last_weight = WeightLogs::where('user_id', $userId)->latest('date')->first('weight');
-        return view('admin', compact('weight_logs', 'target_weight', 'userId', 'last_weight'));
+        return view('admin', compact('today','weight_logs', 'target_weight', 'userId', 'last_weight'));
     }
 
     public function search(Request $request)
@@ -86,18 +87,18 @@ class WeightController extends Controller
 
     public function weight_register()
     {
-        return view('weight_register');
+        $user_id = Auth::id();
+        return view('weight_register', compact('user_id'));
     }
 
     public function create_target(TargetRequest $request)
     {
-        $userId = $request->user_id;
         WeightTarget::create([
-            'user_id' => $userId,
-            'weight' => $request->target_weight,
+            'user_id' => $request->user_id,
+            'target_weight' => $request->target_weight,
         ]);
         WeightLogs::create([
-            'user_id' => $userId,
+            'user_id' => $request->user_id,
             'weight' => $request->weight,
             'date' => now(),
         ]);
